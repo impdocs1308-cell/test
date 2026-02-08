@@ -1,0 +1,11 @@
+function login() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    
+    if(user === 'admin' && pass === '9908') {
+        document.getElementById('login-box').classList.add('hidden');
+        document.getElementById('admin-panel').classList.remove('hidden');
+    } else {
+        alert('Access Denied');
+    }
+}
